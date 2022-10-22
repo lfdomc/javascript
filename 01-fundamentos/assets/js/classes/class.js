@@ -1,7 +1,7 @@
 
-class persona{
+class Persona{
 
-_conteo = 0;
+ static _conteo = 0;
 
 nombre = "";
 codigo = "";
@@ -19,6 +19,8 @@ codigo = "";
 
 }
 
-const Luis = new persona('Luis', '001');
+const Luis = new Persona('Luis', '001');
 
-console.log( Luis);
+Persona._conteo =2;
+
+console.log( 'Conteo estatico ', Persona._conteo);
